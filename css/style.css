@@ -1,6 +1,7 @@
 :root {
     --global-bg-color: #ffffff;
     --global-font-family: "Roboto-Thin", sans-serif;
+    --global-font-light: "Roboto-light", sans-serif;
     --global-text-color: #11131f;
     --global-link-color: #11131f;
     --global-link-hover: #11131f;
@@ -12,6 +13,9 @@
     --global-modal-border: 1px solid #dee2e6;
     --global-modal: 1px solid #ffffff;
     --global-modal-bg: #ffffff;
+    --global-link-blue: blue;
+    --global-line-color: #dddddd;
+
 }
 
 html {
@@ -29,6 +33,9 @@ html[data-theme='dark'] {
     --global-modal-bg: #303030;
     --global-modal-border: 1px solid #434343;
     --global-footer-bg: #303030;
+    --global-link-blue: #00BDFB;
+    --global-line-color: #666666;
+
 }
 
 body {
@@ -57,11 +64,7 @@ header {
     justify-content: flex-end;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+
 ul,
 li,
 p,
@@ -69,6 +72,18 @@ a,
 .par2,
 small {
     font-family: var(--global-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--global-font-light);
+}
+
+.blue {
+    color: var(--global-link-blue);
 }
 
 .no-underline {
@@ -84,11 +99,20 @@ h2 {
     font-size: 20px;
 }
 
-h3,
+h3 {
+    font-size: 18px;
+    color: var(--global-text-color);
+}
+
+
 p,
 li {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--global-text-color);
+}
+
+.line {
+    border-color: var(--global-line-color);
 }
 
 .par2 {
@@ -242,7 +266,10 @@ blockquote {
     filter: invert(100%);
 }
 
-œ
+/* -------Project Styles------- */
+.persona-img {
+    max-width: 75%;
+}
 
 /* -------Modal Styles------- */
 .modal-content {
