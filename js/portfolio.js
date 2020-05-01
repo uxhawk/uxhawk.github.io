@@ -42,34 +42,35 @@ function setStyle() {
     // ******************************************
     Chart.defaults.global.defaultFontColor = chartFontColor;
     Chart.defaults.global.defaultFontFamily = "Roboto-light";
-    const ctx = document.getElementById('survey');
-    var survey = new Chart(ctx, {
+    const ctx01 = document.getElementById('survey');
+    var survey = new Chart(ctx01, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['Q1', 'Q2', 'Q3', 'Q4'],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [2.9, 3, 3.8, 3.5],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.9)',
                     'rgba(54, 162, 235, 0.9)',
                     'rgba(255, 206, 86, 0.9)',
                     'rgba(75, 192, 192, 0.9)',
-                    'rgba(153, 102, 255, 0.9)',
-                    'rgba(255, 159, 64, 0.9)'
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
             }]
         },
         options: {
+            title: {
+                display: true,
+                text: "Survey Responses | 1: Strongly Disagree; 5: Strongly Agree",
+                fontFamily: "Roboto",
+                fontSize: 14
+            },
             scales: {
                 yAxes: [{
                     gridLines: {
@@ -77,7 +78,10 @@ function setStyle() {
                         zeroLineColor: chartGridColor
                     },
                     ticks: {
-                        beginAtZero: true
+                        beginAtZero: false,
+                        stepSize: 1,
+                        suggestedMax: 5,
+                        suggestedMin: 1
                     }
                 }],
                 xAxes: [{
@@ -85,6 +89,9 @@ function setStyle() {
                         display: false
                     }
                 }]
+            },
+            legend: {
+                display: false
             }
         }
     });
