@@ -271,6 +271,8 @@ blockquote {
     max-width: 75%;
 }
 
+
+
 /* -------Modal Styles------- */
 .modal-content {
     background-color: var(--global-modal-bg);

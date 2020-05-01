@@ -95,6 +95,143 @@ function setStyle() {
             }
         }
     });
+
+    const ctx02 = document.getElementById('slideLength');
+    var slideLength = new Chart(ctx02, {
+        type: 'bar',
+        data: {
+            labels: ['Three Slides', 'Four Slides', 'Five Slides', 'Six Slides'],
+            datasets: [{
+                data: [2.3, 2.8, 4.1, 4.3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.9)',
+                    'rgba(54, 162, 235, 0.9)',
+                    'rgba(255, 206, 86, 0.9)',
+                    'rgba(75, 192, 192, 0.9)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "I think the onboarding process was too long | 1: Strongly Disagree; 5: Strongly Agree",
+                fontFamily: "Roboto",
+                fontSize: 14
+            },
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        color: chartGridColor,
+                        zeroLineColor: chartGridColor
+                    },
+                    ticks: {
+                        beginAtZero: false,
+                        stepSize: 1,
+                        suggestedMax: 5,
+                        suggestedMin: 1
+                    }
+                }],
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    }
+                }]
+            },
+            legend: {
+                display: false
+            }
+        }
+    });
+
+    datasets: [{
+        label: "Africa",
+        backgroundColor: "#3e95cd",
+        data: [133, 221, 783, 2478]
+    }, {
+        label: "Europe",
+        backgroundColor: "#8e5ea2",
+        data: [408, 547, 675, 734]
+    }]
+
+    const ctx03 = document.getElementById('benchmark');
+    var survey = new Chart(ctx03, {
+        type: 'bar',
+        data: {
+            labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+            datasets: [{
+                    label: "Existing Customers",
+                    data: [2.9, 3, 3.8, 3.5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.9)',
+                        'rgba(255, 99, 132, 0.9)',
+                        'rgba(255, 99, 132, 0.9)',
+                        'rgba(255, 99, 132, 0.9)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                    ],
+                    borderWidth: 1
+                },
+                {
+                    label: "New Designs",
+                    data: [3.6, 4.2, 3, 3.4],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.9)',
+                        'rgba(75, 192, 192, 0.9)',
+                        'rgba(75, 192, 192, 0.9)',
+                        'rgba(75, 192, 192, 0.9)',
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)',
+                    ],
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "Survey Responses | 1: Strongly Disagree; 5: Strongly Agree",
+                fontFamily: "Roboto",
+                fontSize: 14
+            },
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        color: chartGridColor,
+                        zeroLineColor: chartGridColor
+                    },
+                    ticks: {
+                        beginAtZero: false,
+                        stepSize: 1,
+                        suggestedMax: 5,
+                        suggestedMin: 1
+                    }
+                }],
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    }
+                }]
+            },
+            legend: {
+                display: true
+            }
+        }
+    });
 }
 
 function toggleTheme() {
