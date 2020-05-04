@@ -51,7 +51,7 @@ main {
     min-height: 100vh;
 }
 
-#mug-shot {
+.mug-shot {
     height: 100px;
     width: 100px;
 }
