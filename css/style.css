@@ -15,6 +15,7 @@
     --global-modal-bg: #ffffff;
     --global-link-blue: blue;
     --global-line-color: #dddddd;
+    --global-filter-invert: 100%;
 
 }
 
@@ -35,6 +36,7 @@ html[data-theme='dark'] {
     --global-footer-bg: #303030;
     --global-link-blue: #00BDFB;
     --global-line-color: #666666;
+    --global-filter-invert: 0%;
 
 }
 
@@ -271,7 +273,7 @@ blockquote {
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: invert(100%);
+    filter: invert(var(--global-filter-invert));
 }
 
 /* -------Project Styles------- */
