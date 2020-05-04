@@ -94,29 +94,97 @@
 
                     <h3 class="pt-3">My Role</h3>
                     <p>I planned and executed all generative and evaluative user
-                        research and usability testing. Research outcomes fed direction into the design of wireframes
-                        and prototypes of task flows. I kept the project team up to date on my research and design
-                        efforts and I regularly advocted for user needs and best practices for usable UI design.
+                        research and usability testing. Research outcomes fed directly into the design of wireframes,
+                        prototypes, and task flows.
+                        <!-- I kept the project team up to date on my research and design
+                        efforts and I regularly advocted for user needs and best practices for usable UI design. -->
                     </p>
                     <!------------ GENERATIVE RESEARCH ------------>
-                    <h2 class="pt-3">Generative Research</h2>
+                    <h2 class="pt-3">Phase I: Generative Research</h2>
                     <h3>New Customer Interviews</h3>
                     <p> New policy holders were the target audience for this application. I recruited eight participants
-                        that had purchased a insurance within the past six months for remote semi-structured interviews.
+                        that had purchased insurance within the past six months for remote semi-structured interviews.
                         Interviews lasted approximately 40 minutes, during which time the participants answered
                         questions about their shopping experience and what it was like to be a new customer.
                     </p>
+                    <table class="table border-bottom pt-3">
+                        <tbody>
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <p class="p-0 m-0">Sample Interview Questions</p>
+                                    </th>
+                                    <th scope="col"></th>
+
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th class="w-25" scope="row">
+                                    <p class="p-0 m-0">Q1</p>
+                                </th>
+                                <td>
+                                    <p class="p-0 m-0">What did you do after you purchased the policy?</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="w-25" scope="row">
+                                    <p class="p-0 m-0">Q2</p>
+                                </th>
+                                <td>
+                                    <p class="p-0 m-0">What stands out to you about the first time, or first few times,
+                                        you used the app?</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="w-25" scope="row">
+                                    <p class="p-0 m-0">Q3</p>
+                                </th>
+                                <td>
+                                    <p class="p-0 m-0">Would you rather call to get help or go online? Why?</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="w-25" scope="row">
+                                    <p class="p-0 m-0">Q4</p>
+                                </th>
+                                <td>
+                                    <p class="p-0 m-0">When you have called, why did you pick up the phone?</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <!------------ INTERVIEW TAKEAWAYS ------------>
-                    <h3 class="pt-3">Interview Highlights</h3>
-                    <p>Lorem ipsum dolor</p>
+                    <h4 class="pt-3">Interview Takeaways</h4>
+                    <ul>
+                        <li>
+                            <p>New users want to look for confirmation; make sure address, drivers, and vehicles were
+                                correct
+                            </p>
+                        </li>
+                        <li>
+                            <p>The process was overwhelming, hesitant to add another step in an already lengthy process;
+                                too many questions
+                            </p>
+                        </li>
+                        <li>
+                            <p>For accidents, updates, cancellation (big stuff) users call; less pressure
+                                with more experience
+                            </p>
+                        </li>
+                        <li>
+                            <p>Wanted peace of mind; confidence & accuracy
+                            </p>
+                        </li>
+                    </ul>
 
                     <h3 class="pt-3">Existing Customer Survey</h3>
                     <p class="pb-3">
                         In addition to the interviews, I distributed a survey to existing customers to
                         compile data on the perceptions of active users. This helped me create a well-rounded model of
-                        what it meant to be a "new customer" from both current users and the general population of
-                        policy holders around the country.
+                        what it meant to be a "new customer."
                     </p>
+
                     <table class="table border-bottom pt-3">
                         <tbody>
                             <thead>
@@ -166,6 +234,9 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p class="pt-3">Responses to the survey indicated room for improvement in making the existing
+                        onboarding
+                        experience more educational and less tech-savvy users.</p>
                     <!------------ BAR CHART SURVEY ------------>
                     <canvas class="pt-3" id="survey" width="100%" max-height="400"></canvas>
 
@@ -173,9 +244,9 @@
                     <p></p>
                     <h3 class="pt-3">Personas From Generative Research</h3>
                     <p> The insights from the user interviews and their survey responses led to the creation of a
-                        persona name Sue. Sue's uncertainty through the experience, lack of confidence in her insurance,
-                        and difficulty adopting technology were key problems to solve through subsequent research and
-                        design efforts.
+                        persona named Sue. Sue's uncertainty during the onboarding experience, lack of confidence in her
+                        insurance,
+                        and difficulty adopting technology became key problems to solve.
                     </p>
                     <div class="text-center">
                         <img class="w-75 mb-3 pb-3"
@@ -184,7 +255,7 @@
                     </div>
 
                     <!------------ EVALUATIVE RESEARCH ------------>
-                    <h2 class="pt-3">Evaluative Research</h2>
+                    <h2 class="pt-3">Phase II: Evaluative Research</h2>
                     <h3>Usability Testing</h3>
                     <p>The usability testing goals were to establish a baseline of user performance and identify
                         potential design concerns to be addressed in order to improve the efficiency, productivity, and
@@ -193,52 +264,63 @@
                             target="blank">Usability Test Plan Template</a> provided a scaffolding to structure research
                         efforts.
                     </p>
-                    <p class="pb-0 mb-1">Usability testing objectives included:</p>
-                    <ul>
-                        <li>
-                            <p class="pb-0 mb-1">Identify design inconsistencies and usability problem areas within
-                                the user interface
-                                and content areas. Potential sources of error may include:</p>
-                            <ul>
-                                <li>
-                                    <p class="pb-0 mb-1">Navigation errors – failure to locate functions, excessive
-                                        keystrokes to complete
-                                        a
-                                        function, failure to follow recommended task flows.</p>
-                                </li>
-                                <li>
-                                    <p class="pb-0 mb-1">Presentation errors – failure to locate and properly act upon
-                                        desired information
-                                        in
-                                        screens, selection errors due to labeling ambiguities.</p>
-                                </li>
-                                <li>
-                                    <p class="pb-0 mb-1">Control usage problems – improper interactions or incorrect
-                                        usage of UI
-                                        components.</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="pb-0 mb-1"> Exercise the application under controlled test conditions
-                                with
-                                representative
-                                users to assess whether usability goals regarding an effective,
-                                efficient, and well-received user interface have been achieved.</p>
-                        </li>
-                        <li>
-                            <p class="pb-0 mb-1">Establish baseline user performance and user-satisfaction levels of the
-                                user interface
-                                for
-                                future usability evaluations.</p>
-                        </li>
-                    </ul>
+
+                    <p href="#testObjectives" data-toggle="collapse" id="accordionLink" class="pointer"><span
+                            id="accordion-icon" class="pr-2"><i class="far fa-plus-square" href="#testObjectives"
+                                data-toggle="collapse"></i></span> <span id="view-objective">View
+                            Testing
+                            Objectives</span></p>
+                    <div class="collapse" id="testObjectives">
+                        <ul>
+                            <li>
+                                <p class="pb-0 mb-1">Identify design inconsistencies and usability problem areas within
+                                    the user interface
+                                    and content areas. Potential sources of error may include:</p>
+                                <ul>
+                                    <li>
+                                        <p class="pb-0 mb-1">Navigation errors – failure to locate functions, excessive
+                                            keystrokes to complete
+                                            a
+                                            function, failure to follow recommended task flows.</p>
+                                    </li>
+                                    <li>
+                                        <p class="pb-0 mb-1">Presentation errors – failure to locate and properly act
+                                            upon
+                                            desired information
+                                            in
+                                            screens, selection errors due to labeling ambiguities.</p>
+                                    </li>
+                                    <li>
+                                        <p class="pb-0 mb-1">Control usage problems – improper interactions or incorrect
+                                            usage of UI
+                                            components.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="pb-0 mb-1"> Exercise the application under controlled test conditions
+                                    with
+                                    representative
+                                    users to assess whether usability goals regarding an effective,
+                                    efficient, and well-received user interface have been achieved.</p>
+                            </li>
+                            <li>
+                                <p class="pb-0 mb-1">Establish baseline user performance and user-satisfaction levels of
+                                    the
+                                    user interface
+                                    for
+                                    future usability evaluations.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+
                     <h2 class="pt-3">Methods</h2>
                     <p>Data were collected on this project through remote, unmoderated usability tests. This allowed for
                         rapid data collection from target users across the country. Participants were recruited and paid
                         through <a class="blue" href="https://www.usertesting.com/" target="blank">usertesting.com</a>.
                         Sessions
-                        lasted approximately 40 minutes during which users practiced
+                        lasted approximately 40 minutes during which time users practiced
                         <a class="blue" href="https://www.nngroup.com/articles/thinking-aloud-the-1-usability-tool/"
                             target="blank">think aloud
                             protocols</a> and shared their screens to record interactions.
@@ -310,8 +392,7 @@
                             scale</a> questions to share their perceived difficulty ratings, overall satisfaction, and
                         confidence during their interactions. The Nielsen Norman Group's <a class="blue"
                             href="nngroup.com/articles/measuring-perceived-usability/" target="blank">guide to measuring
-                            perceived usability</a> was a great resource for recording user perceptions at the
-                        conclusion of each test session.</p>
+                            perceived usability</a> was a great survey design resource.</p>
                     <table class="table border-bottom pt-3">
                         <tbody>
                             <thead>
@@ -344,7 +425,7 @@
                                     <p class="p-0 m-0">Q3</p>
                                 </th>
                                 <td>
-                                    <p class="p-0 m-0">Overall, the app way easy to use.</p>
+                                    <p class="p-0 m-0">Overall, the app was easy to use.</p>
                                 </td>
                             </tr>
 
@@ -358,7 +439,14 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <p class="pt-3">Results from the satisfaction questionnaire indicated that modifying the onboarding
+                        experience
+                        (by adding slides to the permissions granting process) increased the perceived usability of the
+                        application.</p>
+
                     <!------------ METRICS DISPLAY FOR SURVEY RESPONSES ------------>
+                    <canvas class="pt-3" id="satQuestionnaire" width="100%" max-height="400"></canvas>
 
                 </div>
             </div>
@@ -477,8 +565,8 @@
     </main>
 
 
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer w-100">
+        <div class="container w-100">
             <p class="mb-0"><i class="far fa-copyright mr-2"></i>David Hawkins 2020</p>
         </div>
     </footer>

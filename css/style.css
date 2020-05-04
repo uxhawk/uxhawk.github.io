@@ -82,6 +82,14 @@ h5 {
     font-family: var(--global-font-light);
 }
 
+#view-objective {
+    text-decoration: underline;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
 .blue {
     color: var(--global-link-blue);
 }
@@ -271,8 +279,6 @@ blockquote {
     max-width: 75%;
 }
 
-
-
 /* -------Modal Styles------- */
 .modal-content {
     background-color: var(--global-modal-bg);
@@ -296,7 +302,8 @@ blockquote {
     text-align: center;
     position: absolute;
     padding: 20px;
-    width: 100vw;
+    left: 0;
+
 }
 
 footer p {

@@ -39,7 +39,6 @@ $(document).ready(function() {
                 chartFontColor = '#ffffff';
                 chartGridColor = '#acacac';
             }
-
         }
 
         // ******************************************
@@ -157,7 +156,7 @@ $(document).ready(function() {
             });
 
             const ctx03 = document.getElementById('benchmark');
-            var survey = new Chart(ctx03, {
+            var benchmark = new Chart(ctx03, {
                 type: 'bar',
                 data: {
                     labels: ['Q1', 'Q2', 'Q3', 'Q4'],
@@ -228,6 +227,96 @@ $(document).ready(function() {
                     }
                 }
             });
+
+            const ctx04 = document.getElementById('satQuestionnaire');
+            var satQuestionnaire = new Chart(ctx04, {
+                type: 'bar',
+                data: {
+                    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+                    datasets: [{
+                            label: "Round 1",
+                            data: [1.9, 2.6, 3.5, 4],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.9)',
+                                'rgba(255, 99, 132, 0.9)',
+                                'rgba(255, 99, 132, 0.9)',
+                                'rgba(255, 99, 132, 0.9)',
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(255, 99, 132, 1)',
+                            ],
+                            borderWidth: 1
+                        },
+                        {
+                            label: "Round 2",
+                            data: [1.75, 2.7, 3.3, 4],
+                            backgroundColor: [
+                                'rgba(75, 192, 192, 0.9)',
+                                'rgba(75, 192, 192, 0.9)',
+                                'rgba(75, 192, 192, 0.9)',
+                                'rgba(75, 192, 192, 0.9)',
+                            ],
+                            borderColor: [
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(75, 192, 192, 1)',
+                            ],
+                            borderWidth: 1
+                        },
+                        {
+                            label: "Round 3",
+                            data: [1.75, 2, 3.8, 4.3],
+                            backgroundColor: [
+                                'rgba(255, 206, 86, 0.9)',
+                                'rgba(255, 206, 86, 0.9)',
+                                'rgba(255, 206, 86, 0.9)',
+                                'rgba(255, 206, 86, 0.9)',
+                            ],
+                            borderColor: [
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(255, 206, 86, 1)',
+                            ],
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Survey Responses | 1: Strongly Disagree; 5: Strongly Agree",
+                        fontFamily: "Roboto",
+                        fontSize: 14
+                    },
+                    scales: {
+                        yAxes: [{
+                            gridLines: {
+                                color: chartGridColor,
+                                zeroLineColor: chartGridColor
+                            },
+                            ticks: {
+                                beginAtZero: false,
+                                stepSize: 1,
+                                suggestedMax: 5,
+                                suggestedMin: 1
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                display: false
+                            }
+                        }]
+                    },
+                    legend: {
+                        display: true
+                    }
+                }
+            });
         }
     }
 
@@ -245,7 +334,20 @@ $(document).ready(function() {
         }
     }
 
+    const accordion = $("#testObjectives");
+    const icon = $("#accordion-icon");
+    const linkText = $("#view-objective")
+    $("#accordionLink").click(function() {
+        if (accordion.is(":visible")) {
+            linkText.text("View Testing Objectives");
+            icon.html(`<i class="far fa-plus-square"></i>`);
+        } else {
+            linkText.text("Collapse Testing Objectives");
+            icon.html(`<i class="far fa-minus-square"></i>`);
+        };
+    });
+
+
     init();
     $("#theme-btn").click(toggleTheme);
-
 });
