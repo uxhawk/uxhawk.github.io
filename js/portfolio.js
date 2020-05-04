@@ -287,6 +287,8 @@ $(document).ready(function() {
                     ]
                 },
                 options: {
+
+
                     title: {
                         display: true,
                         text: "Survey Responses | 1: Strongly Disagree; 5: Strongly Agree",
