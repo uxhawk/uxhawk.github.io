@@ -1,7 +1,7 @@
 :root {
     --global-bg-color: #ffffff;
     --global-font-family: "Roboto", sans-serif;
-    --global-font-light: "Roboto-light", sans-serif;
+    /* --global-font-light: "Roboto-light", sans-serif; */
     --global-text-color: #11131f;
     --global-link-color: #11131f;
     --global-link-hover: #11131f;
@@ -81,7 +81,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: var(--global-font-light);
+    font-family: var(--global-font-family);
 }
 
 #view-objective {
@@ -101,23 +101,35 @@ h5 {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 2rem;
     color: var(--global-text-color);
+    
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.8rem;
+   
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 1.6rem;
     color: var(--global-text-color);
+    
+}
+h4 {
+    color: var(--global-text-color);
+    font-size: 1.4rem;
+}
+
+h5 {
+    color: var(--global-text-color);
+    font-size: 1.2rem;
 }
 
 
 p,
 li {
-    font-size: 16px;
+    font-size: 1.1rem;
     color: var(--global-text-color);
 }
 
@@ -130,13 +142,7 @@ li {
     color: var(--global-text-color)
 }
 
-h4 {
-    font-size: 15px;
-}
 
-h5 {
-    color: var(--global-text-color);
-}
 
 small {
     color: var(--global-text-color);
