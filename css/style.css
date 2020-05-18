@@ -1,7 +1,7 @@
 :root {
     --global-bg-color: #ffffff;
-    --global-font-family: "Roboto", sans-serif;
-    /* --global-font-light: "Roboto-light", sans-serif; */
+    --global-font-family: "Roboto-light", sans-serif;
+    --global-font-light: "Roboto-light", sans-serif;
     --global-text-color: #11131f;
     --global-link-color: #11131f;
     --global-link-hover: #11131f;
@@ -178,14 +178,14 @@ a {
 }
 
 blockquote p {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 15px;
-    color: var(--global-text-color)
+    color: var(--global-text-color);
+    
 }
 
 blockquote {
     width: 100%;
-    font-family: "Roboto-Thin";
 }
 
 .bold {
