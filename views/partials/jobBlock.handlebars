@@ -1,0 +1,17 @@
+{{#each job}}
+  <div class="row">
+      <div class="col-md-8 offset-md-2 dyn-text mb-3">
+          <div class="pb-1">
+              <h3 class="bold">{{this.title}}</h3>
+              <h3 class="par2"><em>{{this.company}}</em> </h3>
+              <h3 class="par2"><em>{{this.startDate}} - {{this.endDate}} | {{this.location}}</em></h3>
+          </div>
+          <p class="pb-2">{{this.summary}}</p>
+          <ul>
+            {{#each accomplishment}}
+            {{> resume-bullet}}
+            {{/each}}
+          </ul>
+      </div>
+  </div>
+{{/each}}
