@@ -16,6 +16,7 @@
     --global-link-blue: blue;
     --global-line-color: #dddddd;
     --global-filter-invert: 100%;
+    --global-box-shadow: rgb(0,0,0);
 
 }
 
@@ -37,6 +38,7 @@ html[data-theme='dark'] {
     --global-link-blue: #00BDFB;
     --global-line-color: #666666;
     --global-filter-invert: 0%;
+    
 
 }
 
@@ -181,7 +183,6 @@ blockquote p {
     font-size: 1.5rem;
     padding: 15px;
     color: var(--global-text-color);
-    
 }
 
 blockquote {
@@ -256,7 +257,12 @@ blockquote {
 .card {
     border: none;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-    margin: 0 auto
+    margin: 0 auto;
+    transition: .3s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
 }
 
 .w-90 {
@@ -282,8 +288,7 @@ blockquote {
     background: var(--global-card-bg);
     border-radius: 25px;
     padding: 10px 15px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-    animation-duration: 4s;
+    transition: .3s;
     margin: 1rem 0 .5rem 0;
 }
 
@@ -293,7 +298,7 @@ blockquote {
     background: var(--global-card-bg);
     border-radius: 25px;
     padding: 10px 15px;
-    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
 }
 
 .btn-primary:active:focus {
@@ -302,7 +307,7 @@ blockquote {
     background: var(--global-card-bg)!important;
     border-radius: 25px!important;
     padding: 10px 15px!important;
-    box-shadow: 0px 0px 25px rgba(0,0,0,0.4)!important;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.2)!important;
 }
 
 .btn-primary:active {
@@ -311,7 +316,7 @@ blockquote {
     background: var(--global-text-color)!important;
     border-radius: 25px!important;
     padding: 10px 15px!important;
-    box-shadow: 0px 0px 25px rgba(0,0,0,0.4)!important;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.2)!important;
 }
 
 a:hover {
@@ -407,11 +412,3 @@ footer p {
 
 /* // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width */
-
-
-/* custom card styles */
-
-
-
-
-.overflow-header {}
