@@ -264,7 +264,7 @@ blockquote {
 }
 
 .img-rounded {
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
     width: 108%;
     margin-left: -4%;
@@ -279,27 +279,30 @@ blockquote {
 .btn-primary {
     color: var(--global-text-color);
     border: 2px solid var(--global-text-color);
-    background: var(--global-bg-color);
+    background: var(--global-card-bg);
     border-radius: 25px;
     padding: 10px 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    animation-duration: 4s;
+    margin: 1rem 0 .5rem 0;
 }
 
 .btn-primary:hover {
     color: var(--global-text-color);
     border: 2px solid var(--global-text-color);
-    background: var(--global-bg-color);
+    background: var(--global-card-bg);
     border-radius: 25px;
     padding: 10px 15px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
 }
 
 .btn-primary:active:focus {
     color: var(--global-bg-color)!important;
     border: 2px solid var(--global-bg-color)!important;
-    background: var(--global-text-color)!important;
+    background: var(--global-card-bg)!important;
     border-radius: 25px!important;
     padding: 10px 15px!important;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2)!important;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4)!important;
 }
 
 .btn-primary:active {
@@ -308,7 +311,7 @@ blockquote {
     background: var(--global-text-color)!important;
     border-radius: 25px!important;
     padding: 10px 15px!important;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2)!important;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4)!important;
 }
 
 a:hover {
