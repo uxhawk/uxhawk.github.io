@@ -4,7 +4,11 @@
   "description": "Research, design, and development capabilities",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "start": "node server.js",
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix .",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
