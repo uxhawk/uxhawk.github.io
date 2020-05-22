@@ -378,12 +378,24 @@ a:hover {
     padding: 20px;
     left: 0;
     bottom: 0;
+    margin-top: 60px;
 
 }
 
 footer p {
     color: var(--global-footer-color);
 }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+
 
 
 
