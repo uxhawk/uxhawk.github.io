@@ -46,6 +46,7 @@ body {
     padding-top: 150px;
     background-color: var(--global-bg-color);
     min-height: 100vh;
+    margin: 0px!important;
 }
 
 main {
