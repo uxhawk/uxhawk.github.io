@@ -270,7 +270,7 @@ blockquote {
 }
 
 .img-rounded {
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
     width: 108%;
     margin-left: -4%;
