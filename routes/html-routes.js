@@ -22,4 +22,20 @@ module.exports = function(app) {
   app.get('/new-customer-onboarding', (req, res) => {
     res.render('new-customer-onboarding');
   });
+
+  app.get('/design-system', (req, res) => {
+    res.render('design-system');
+  });
+
+  app.get('/ecommerce', (req, res) => {
+    res.render('ecommerce');
+  });
+
+  app.get('/eye-tracking', (req, res) => {
+    res.render('eye-tracking');
+  });
+
+  app.get('/heuristic-evaluation', (req, res) => {
+    res.render('heuristic-evaluation');
+  });
 };
