@@ -27,7 +27,10 @@
   "homepage": "https://github.com/uxhawk/uxhawk.github.io#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongojs": "^3.1.0"
+    "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
+    "mongojs": "^3.1.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
