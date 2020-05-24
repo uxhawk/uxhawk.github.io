@@ -17,7 +17,6 @@
     --global-line-color: #dddddd;
     --global-filter-invert: 100%;
     --global-box-shadow: rgb(0,0,0);
-
 }
 
 html {
@@ -56,6 +55,11 @@ main {
 .mug-shot {
     height: 100px;
     width: 100px;
+}
+
+#profile-pic {
+max-width: 100%;
+max-height: 100%;
 }
 
 header {
@@ -357,8 +361,6 @@ a:hover {
     border-bottom: var(--global-modal-border);
 }
 
-
-
 /* -------Footer Styles------- */
 .footer {
     background-color: var(--global-footer-bg);
@@ -369,7 +371,6 @@ a:hover {
     left: 0;
     bottom: 0;
     margin-top: 60px;
-
 }
 
 footer p {
@@ -384,12 +385,6 @@ footer p {
   #content-wrap {
     padding-bottom: 2.5rem;    /* Footer height */
   }
-
-
-
-
-
-
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}
