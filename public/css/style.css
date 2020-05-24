@@ -38,8 +38,6 @@ html[data-theme='dark'] {
     --global-link-blue: #00BDFB;
     --global-line-color: #666666;
     --global-filter-invert: 0%;
-    
-
 }
 
 body {
@@ -47,6 +45,8 @@ body {
     transition: 500ms ease-in-out;
     padding-top: 150px;
     background-color: var(--global-bg-color);
+    min-height: 100vh;
+    margin: 0px!important;
 }
 
 main {
@@ -378,12 +378,25 @@ a:hover {
     position: absolute;
     padding: 20px;
     left: 0;
+    bottom: 0;
+    margin-top: 60px;
 
 }
 
 footer p {
     color: var(--global-footer-color);
 }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+
 
 
 

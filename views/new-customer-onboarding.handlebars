@@ -1,0 +1,485 @@
+{{> nav}}
+  <section>
+      <div class="row mt-4 pt-4">
+          <div class="col-md-8 offset-md-2 dyn-text mb-3">
+              <h1>New Customer Onboarding</h1>
+              <hr class="mt-1 line">
+              <h2 class="pt-3 mb-0">Project Directive</h2>
+              <p>Create an educational and engaging onboarding experience for new app users. The onboarding
+                  initiative needed to reduce the number of calls from new users and increase enrollment rates in
+                  notification and location services.</p>
+
+              <h3 class="pt-3">My Role</h3>
+              <p>I planned and executed all generative and evaluative user
+                  research and usability testing. Research outcomes fed directly into the design of wireframes,
+                  prototypes, and task flows.
+                  <!-- I kept the project team up to date on my research and design
+                  efforts and I regularly advocted for user needs and best practices for usable UI design. -->
+              </p>
+              <!------------ GENERATIVE RESEARCH ------------>
+              <h2 class="pt-3">Phase I: Generative Research</h2>
+              <h3>New Customer Interviews</h3>
+              <p> New policy holders were the target audience for this application. I recruited eight participants
+                  that had purchased insurance within the past six months for remote semi-structured interviews.
+                  Interviews lasted approximately 40 minutes, during which time the participants answered
+                  questions about their shopping experience and what it was like to be a new customer.
+              </p>
+              <table class="table border-bottom pt-3">
+                  <tbody>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+                                  <p class="p-0 m-0">Sample Interview Questions</p>
+                              </th>
+                              <th scope="col"></th>
+
+                          </tr>
+                      </thead>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q1</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">What did you do after you purchased the policy?</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q2</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">What stands out to you about the first time, or first few times,
+                                  you used the app?</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q3</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">Would you rather call to get help or go online? Why?</p>
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q4</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">When you have called, why did you pick up the phone?</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <!------------ INTERVIEW TAKEAWAYS ------------>
+              <h4 class="pt-3">Interview Takeaways</h4>
+              <ul>
+                  <li>
+                      <p>New users want to look for confirmation; make sure address, drivers, and vehicles were
+                          correct
+                      </p>
+                  </li>
+                  <li>
+                      <p>The process was overwhelming, hesitant to add another step in an already lengthy process;
+                          too many questions
+                      </p>
+                  </li>
+                  <li>
+                      <p>For accidents, updates, cancellation (big stuff) users call; less pressure
+                          with more experience
+                      </p>
+                  </li>
+                  <li>
+                      <p>Wanted peace of mind; confidence & accuracy
+                      </p>
+                  </li>
+              </ul>
+
+              <h3 class="pt-3">Existing Customer Survey</h3>
+              <p class="pb-3">
+                  In addition to the interviews, I distributed a survey to existing customers to
+                  compile data on the perceptions of active users. This helped me create a well-rounded model of
+                  what it meant to be a "new customer."
+              </p>
+
+              <table class="table border-bottom pt-3">
+                  <tbody>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+                                  <p class="p-0 m-0">Sample Survey Questions</p>
+                              </th>
+                              <th scope="col"></th>
+
+                          </tr>
+                      </thead>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q1</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I was confident in my knowledge about insurance.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q2</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I had everything I
+                                  needed as a policy
+                                  holder.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q3</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I needed the help of technical person to use the app.</p>
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q4</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I would like to use this
+                                  app frequently.</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p class="pt-3">Responses to the survey indicated room for improvement in making the existing
+                  onboarding
+                  experience more educational and less tech-savvy users.</p>
+              <!------------ BAR CHART SURVEY ------------>
+              <canvas class="pt-3" id="survey" height="200"></canvas>
+
+              <!------------ TABLE OF KEY COMMENTS ------------>
+              <p></p>
+              <h3 class="pt-3">Personas From Generative Research</h3>
+              <p> The insights from the user interviews and their survey responses led to the creation of a
+                  persona named Sue. Sue's uncertainty during the onboarding experience, lack of confidence in her
+                  insurance,
+                  and difficulty adopting technology became key problems to solve.
+              </p>
+              <div class="text-center">
+                  <img class="w-75 mb-3 pb-3"
+                      src="https://lh3.googleusercontent.com/sGGKII8ueezynj2eY3rlT8CK9kabduKw1ZAp_5e5cno4LuxKOaJdeA_Cg48ioQJ7yd1sUlxY95L8YffUIHuqdngcvi_-iVrGtEZAr2H20_sYFyvpexeKr8EKZ78U9-fVzt3wXxns8p8YkoJ8BuUJyW_5fTeopG6mBlxKgNPK3jg7no13H80ctzcYulImxYRo-dNXj6CI0M1mYBf44Va7RjuJrP9ZM12JWlDWtr-bUojxhCe_X8CDlLFREjMZb9Wwzqyar6uzXQBuoSFzrtmRXB_L-Tsosi3naTVg659wjrNj7HVR4dgnSxkSJeFDLBKN6NxUTPp-f8bDYj94-T2iof8dcTtqaDNPvFkKANGM3fGITIBjVkQDOah-5H1q6lqoaf2ZGYoUY73Vk4q_hFcfIO0Bi1TyjK1TKhK_h8WUVRG7jaXSiGEZ5ulLBBSCWuCa-pmWdbwjVuORM4KtwgIEqZMZv4q_KqNr1X7FVbCotKYdG6I9WBtt_pZTDQz8M45jJT3BfTnuwjqpvtzn1q2pNcCqVushh7ddWXJ_51dhsea40q0OxXrXRveBLh6P6Blze2KEMQPv-gxnUiHPflFELue6dv_t4dnJ_UemC_-FfrdYi3VUFIYCOsE4dvlJR2xCY5KXLQmTealZfJ7cMn1Juuiy8jKiPz242dqUwN_Ni9AmeBX-IMzOHuFyE-cm1kjKw2R-zpGgvEy4MEWfD7fdnHXhuKzm96ERvVYCqnEG5E0X1GN6=w1183-h1581-no"
+                      alt="Comic book layout of a user buying car insurance">
+              </div>
+
+              <!------------ EVALUATIVE RESEARCH ------------>
+              <h2 class="pt-3">Phase II: Evaluative Research</h2>
+              <h3>Usability Testing</h3>
+              <p>The usability testing goals were to establish a baseline of user performance and identify
+                  potential design concerns to be addressed in order to improve the efficiency, productivity, and
+                  end-user satisfaction. The <a class="blue"
+                      href="https://www.usability.gov/how-to-and-tools/resources/templates/usability-test-plan-template.html"
+                      target="blank">Usability Test Plan Template</a> provided a scaffolding to structure research
+                  efforts.
+              </p>
+
+              <p href="#testObjectives" data-toggle="collapse" id="accordionLink" class="pointer"><span
+                      id="accordion-icon" class="pr-2"><i class="far fa-plus-square" href="#testObjectives"
+                          data-toggle="collapse"></i></span> <span id="view-objective">View
+                      Testing
+                      Objectives</span></p>
+              <div class="collapse" id="testObjectives">
+                  <ul>
+                      <li>
+                          <p class="pb-0 mb-1">Identify design inconsistencies and usability problem areas within
+                              the user interface
+                              and content areas. Potential sources of error may include:</p>
+                          <ul>
+                              <li>
+                                  <p class="pb-0 mb-1">Navigation errors – failure to locate functions, excessive
+                                      keystrokes to complete
+                                      a
+                                      function, failure to follow recommended task flows.</p>
+                              </li>
+                              <li>
+                                  <p class="pb-0 mb-1">Presentation errors – failure to locate and properly act
+                                      upon
+                                      desired information
+                                      in
+                                      screens, selection errors due to labeling ambiguities.</p>
+                              </li>
+                              <li>
+                                  <p class="pb-0 mb-1">Control usage problems – improper interactions or incorrect
+                                      usage of UI
+                                      components.</p>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <p class="pb-0 mb-1"> Exercise the application under controlled test conditions
+                              with
+                              representative
+                              users to assess whether usability goals regarding an effective,
+                              efficient, and well-received user interface have been achieved.</p>
+                      </li>
+                      <li>
+                          <p class="pb-0 mb-1">Establish baseline user performance and user-satisfaction levels of
+                              the
+                              user interface
+                              for
+                              future usability evaluations.</p>
+                      </li>
+                  </ul>
+              </div>
+
+
+              <h2 class="pt-3">Methods</h2>
+              <p>Data were collected on this project through remote, unmoderated usability tests. This allowed for
+                  rapid data collection from target users across the country. Participants were recruited and paid
+                  through <a class="blue" href="https://www.usertesting.com/" target="blank">usertesting.com</a>.
+                  Sessions
+                  lasted approximately 40 minutes during which time users practiced
+                  <a class="blue" href="https://www.nngroup.com/articles/thinking-aloud-the-1-usability-tool/"
+                      target="blank">think aloud
+                      protocols</a> and shared their screens to record interactions.
+              </p>
+              <h3>Scenarios</h3>
+              <p>Users completed the following tasks during the usability test. The questions gave users the
+                  opportunity
+                  to interact with a variety of functions within the application without focusing on one area for
+                  too long. </p>
+              <table class="table border-bottom pt-3">
+                  <tbody>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+                                  <p class="p-0 m-0">Tasks</p>
+                              </th>
+                              <th scope="col"></th>
+
+                          </tr>
+                      </thead>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q1</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">Imagine you just bought car insurance and
+                                  downloaded the company's app. Log in to pay
+                                  your bill.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q2</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">You were about to head to work in the morning
+                                  but left your headlights on all night. Your battery
+                                  is dead and you need assistance. Show what you
+                                  would do to get help.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q3</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">What stood out about the app permission
+                                  screens you saw after you signed into the
+                                  application?</p>
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q4</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">What are your thoughts about the language used
+                                  to grant app permissions you saw after you
+                                  signed in?</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <!------------ METRICS DISPLAY FOR ERROR RATES, COMMENTS ------------>
+
+              <h3 class="pt-3">Satisfaction Questionnaire</h3>
+              <p>Users responded to a series of <a href="https://www.surveymonkey.com/mp/likert-scale/">Likert
+                      scale</a> questions to share their perceived difficulty ratings, overall satisfaction, and
+                  confidence during their interactions. The Nielsen Norman Group's <a class="blue"
+                      href="nngroup.com/articles/measuring-perceived-usability/" target="blank">guide to measuring
+                      perceived usability</a> was a great survey design resource.</p>
+              <table class="table border-bottom pt-3">
+                  <tbody>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+                                  <p class="p-0 m-0">Post-test Questions</p>
+                              </th>
+                              <th scope="col"></th>
+
+                          </tr>
+                      </thead>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q1</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I thought there was too much inconsistency in this system.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q2</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I had to work hard to complete each of my tasks.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q3</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">Overall, the app was easy to use.</p>
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q4</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I was able to successfully accomplish what I was asked to do.</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-3">Results from the satisfaction questionnaire indicated that modifying the onboarding
+                  experience
+                  (by adding slides to the permissions granting process) increased the perceived usability of the
+                  application.</p>
+
+              <!------------ METRICS DISPLAY FOR SURVEY RESPONSES ------------>
+              <div class="w-100">
+                  <canvas class="pt-3" id="satQuestionnaire" height="200"></canvas>
+              </div>
+
+
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-8 offset-md-2 dyn-text mb-3">
+              <h2 class="mb-3">Design Iterations</h2>
+              <p>Through several rounds of usability testing with low-fidelity prototypes, I identified the ideal
+                  length for a new onboarding
+                  experience by presenting study groups with experiences of varying lengths. Users' response to a
+                  satisfaction question identified the three slide option as the best choice.</p>
+
+              <!------------ BAR CHART SURVEY ------------>
+              <canvas class="pt-3" id="slideLength" height="200"></canvas>
+
+              <div class="text-center pt-3">
+                  <img class="w-100 mb-3 pb-3"
+                      src="https://lh3.googleusercontent.com/iaadAUBeGjVEKIsi7rv6GcA-09dwt6v31blljUPP-P-GyCJn3yM1SOq6VEJ3l2aDH2n6xSB-s8xyPGa-bK1YSXo26YA_0hfv-bMSGqYEWMzkH91bg_HV76H2NITUYpuEn2C0Gb5dTOvvj7-rjEyxpJGQnHkAdvO3LoagxUpOFawU9eDlZLgbcIUE-lhzoizSrplxP0OqO6LcOYSVoiuRr7aWnblDhlo8PaXRw6QXtpTBsiASB7xQkHocIqOTR4vsqsDIfSCuyEaSjXrNx1Z6vSrSPG41dwZNXYEz1de8TSzaMmlqBPrqgW4sCdqSxMNR7NfIIxbDszZKTQb3LggWjICDNwh7yrnYOBC_2XsM_MLSIEMXE6RlgVwwyqz1mgWItA3VkH7c-EArX9owPNRxSlEqPz8l7XTosjoG8LO4lh0uM8lTwe0Mh15h-_mCVu9kPyckj_C1aPCp5-Ehij8DhlJiODWvn8vWPhjmQvW7ytzOkl8I0AcWKjGVZZIkJH_WBKv9luNcx9DPHd8AjIoTNUjRMceIQaks6f2tBDlchq9SW7Fz84QFqF6Esg572Xs-h8pkwPXXBWasKrJIqnMptrduAoqHnR7yMpJYjtpMg1EoZApQYAhLwOJnovQkO8NpvQjqpfksUJtJjfPD-UFyTfvKaG6A6OuB9u_Ip3bPfQQYULtNmhtPapuwTZd8nc7qTpGTaanehuvKILqDgOZgkws5qrLVz7fbV9pQQqc6giLbc7HePpOrtA=w1874-h998-no"
+                      alt="a cartoon with instructions on how to interact with a mobile app">
+              </div>
+              <p>Having users interaction with prototypes of the the entire account creation process helped create
+                  a realistic scenarios by which I could judge fatigue and willingness to engage with new content.
+              </p>
+              <div class="text-center pt-3">
+                  <img class="w-100 mb-3 pb-3"
+                      src="https://lh3.googleusercontent.com/JPYdPdQFmt0X3gqbK_l0MxhaT9Sagm3JsWegISNdSLs4U39J3FqfDkoM42itukbjIgWQdJPOBZFA6M4FBdvdprO8AztRllI3D3ORXWhVH-zLtDe8vhSxbehnoSs4BY406I_CWhJsIzZAptuitK06_iIdFbKZW1LNSaTyYHqiYToUkH0t19YR9eOUZjMhXP8ZlN-s2ZW0DSEpu_XT4IH3Q7XinJC9D9optDYJ2sWtiIDCNfxx8FYaGkV6pod03sbEXAxwEUGi7fKYoKwHK3uZmCliuPqj9n3l2jOTg6b8iJxQ84f_-Xu1-y3edIcFGW2bkeEjcquC6JRye7_v5iLLaaSbIq7H44kJnItMHaMb3ioewaQKQ6S4p9G4hvoQCTmA298nTkx29Nobub0BH57SAlTsVuL11PFr6E9DxiXGdSHZTNikcfgiXaYmZWjXftRF2rbS8PxswV5ouBESvK3lZ-6hE3cus-SLucUMZZwxNUN0wivzP1NuhVPCGeVlq9blf7uvAO8ZiC_ye-79Ex20NFTpQStN9x3VnmibOWL6mXNUWfpoPI8XdGnhH4ChivCAU2_ahZ3H4SriWGgkug0M6dLUceLjHhb9Ii3M0roVIxnK8IiU6bmDZPnnRwewNC9NAY2jg796yQHS_HIq4zSRjXKWZk9e_8C4VqjD3j6xzGhcXzzYds5dSE3WD185HT5JXnkGtB0-zi0l2vSWgP2XE5uH6F7qR91571O54jOm49cG68G_FooYjA=w1904-h1074-no"
+                      alt="a cartoon with instructions on how to interact with a mobile app">
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-8 offset-md-2 dyn-text mb-3">
+              <h2 class="mb-3">Final Designs</h2>
+              <h3>Benchmark Comparisons</h3>
+              <p>Using the final designs, I asked users the same survey questions that I sent to existing
+                  customers at the start of the project. Comparing average scores indicated the new designs should
+                  have a positive impact on the onboarding experience and help new customers engage in
+                  self-management of their policies.</p>
+
+              <table class="table border-bottom pt-3">
+                  <tbody>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+                                  <p class="p-0 m-0">Survey Comparison</p>
+                              </th>
+                              <th scope="col"></th>
+
+                          </tr>
+                      </thead>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q1</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I was confident in my knowledge about insurance.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q2</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I had everything I
+                                  needed as a policy
+                                  holder.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q3</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I needed the help of technical person to use the app.</p>
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <th class="w-25" scope="row">
+                              <p class="p-0 m-0">Q4</p>
+                          </th>
+                          <td>
+                              <p class="p-0 m-0">I would like to use this
+                                  app frequently.</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+
+              <!------------ BAR CHART SURVEY ------------>
+              <canvas class="pt-3" id="benchmark" height="200"></canvas>
+              <h3 class="pt-3">New Onboarding Screens</h3>
+              <p>These designs presented users with an educational first interaction. Rather than engage solely in
+                  account administration, users could enable key app permissions that would help them complete the
+                  most common customer tasks.</p>
+              <div class="row">
+                  <div class="col-md-4 text-center"> <img class="w-100 mb-3 pb-3"
+                          src="https://lh3.googleusercontent.com/myHS-yvKaeznTlLGOxoFbMg1szHDQkBp2rVZxK7E71DSwkwHv0kLFzKPQTwGVYiQyhe2Z8y7gyKWDyGEz1xmxLT7Rd4O1XGkxu35n5BJ5b45ooscdpKmtTzi4RU6-Z4AqLNyTh240JlwxTaPcN7sLfGJfdVopcEiBGwnS6QK91vRsClZosZZ1pJh9YSPHMcpFdK_OdjNOrdhXZhgdvNl_J5dyKqkLk3uOIiNO7jx2Yn56NmHXUS69E2Zq2VGXmcatKmZB5WeltcDeramhIP_3KHVEfyRQPGrc3k9AhuBOazs_Op3aDjy14z3k3swQRn5DU9nHf1sbAoARO_uEozBHhdIWoDrivy6YmaMSTf6uCXwib1b3GAv3Idk1QEH6X3yPmKEFxJK0PhNJ5SbA7bdRsWuRZ3Th-WH-tx3Ad_NjvE586yWZhsKBMSsAWz_XjdC_iSUGlbCvVh4G4QWX5OQrgHBtRDJJZOAzler5gtFXskAwtb2dT_FpR80o7gXi_r3iToXv-tbbwXZNF6FQ4Ht3s4HgjL1gG0f7u5dEh_ylw5Pz3lTQky13d1dbSZuc-JmxahCrCm3iyxPY0A3dO7JMVJL3Ritx11ygE1ySRcF3hsGSwcSb7vsGPpjecNDeOOzhbgMDjcRL4Nw_UAdz__ku3gehF6GgtvS-Mh3ukpXDZMHeuRXdrdSbK289_hP-QAAhtRVFdtaNroppgHLn8_e5dtyQd88qX2Pk2kmTaKdCRBraU10=w1002-h1778-no"
+                          alt="a cartoon with instructions on how to interact with a mobile app">
+                  </div>
+                  <div class="col-md-4 text-center">
+                      <img class="w-100 mb-3 pb-3"
+                          src="https://lh3.googleusercontent.com/uwEH_IrG1YbEyAWhkPYJc9FVfNcifRbboc9uSl7bc5GNKkqWe4KBfdRtualxZK89TgwhCqIN8DF3wZ7b94t1gxg_3F0PcZbuU17iNijzyo8wf2AC4uO0jg1Ug1d8MdhwI6JRbK9xSHked1ejg4ltQFgZOvK228UGR91CBW3I_AlvwtiTaUgC42gNXtlE9BLEj9EfrJV84augzf6tbiQp4fttMkFsVwtEbaTyCTqAJtBSkiMu1Ej19IfhvI-9bvnA06_T02VLYsKVBLSOvricRctoPW59miJ1Z5JCp9lB68wEBOSicWkM5RnbwLRJVdNJOCVntPScpwiev41eTXFhBRTQ0T87BSndAuAkX5mCaRuE4I62Wadty_t4SrJJLpAbwkDEdPN8GcqBWi8qaPCUTJzfMaafynn_mKkAI92dioe0BWzAu-WhAnfOJRieQ36D-0PmFcYQoUQeghvJ1m8AsgZ2gd5kXGrdxn5VJua2cArmyjajPIys9qwjv0WWUQH1ZbID9LFPXqNVFZr6i6No32wN2MUN5_PHkt3zE2ykpi8VcyGCEQc4a92tu00mIvPM1OfPOzRDtbN-BrrIvViDPZwHmETnatAQ__ikS7rniuZMkNSaBRJtKa3lDM_SBr6REAyoX1KMMcY12myCgFkUKxULZYmxvHWF4EJwNzR6qIH4IfD5g-ajXYRDpXAff6HAFh1rL4JMFb1KqtNKFMzXMqBSsWEa7jLgZB34SdTlrGG1TU-1=w1002-h1778-no"
+                          alt="a cartoon with instructions on how to interact with a mobile app">
+                  </div>
+                  <div class="col-md-4 text-center">
+                      <img class="w-100 mb-3 pb-3"
+                          src="https://lh3.googleusercontent.com/UANwGtJFOo9sb2nN81l4NzoUyMdNmnR_0hK61wpshpfEme71r3ubm9YL09onKQVWmbHYZ-wleMlTJLSP0jtczCXn5rrab8Qq8lTH6Uyc43HOveQMpUlx2ejHeFK0-BCshw6cEiv0RIg2JgImxXuiW1zl6SBJF7qgzbg157D9KNbdDtwcTi0ZxBMl_RIhLvzSHwsIXfTW6YEiJs3QluDb68_bQKYCqsBIPttXvqF0rIkmyMOUyx22773wwT4tRamcT2Ahup5azQf19rc_cdZCuh9pdHIdKo_Gpjd0b27IZxXEZb9oMCTtWgz947AwssyFwLVdLSib44n7l0QbHHAQlOs3yNxXDvugrLAANtKVpeMjJkxpD3Ab77fW8LieYCUVcp5LOLtNN0iio-d9v7tExD34S8IniXp8g-QCZOG7TmQw6OUODECH9iH9WfovkHTg-pbQXn_xrGTnQoPkaX18G7rQsuGNBygWWDAQ0jz3PgWkZ-h_t86DDlbN5I7KTk4OkMw5VlI4l44UeS3amSM3quMsjNAwdYZB1nucvWX4MttpaakuQ4m7fOuFMpsmxwGtNL4Juuf7G9aomq-nMxSSpa4AlFeGO6t9Q-nzme0BrRhori3C-ektIAQ7kS4zQuTpjc1bzWEwEhd-Q8Uqg16F4LDR-VlLUTeyX66KuKJPFZ1oqz-n-j1vZszfvWSO4LWvJL46FMrpEehtnAssHTsFB2Y9wxwcRuDJbAj_Kd2rV9ImtGsh=w1002-h1778-no"
+                          alt="a cartoon with instructions on how to interact with a mobile app">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+{{> footer}}

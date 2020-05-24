@@ -1,0 +1,40 @@
+{{> nav}}
+
+<section class="row">
+    <div class="col-md-8 offset-md-2 dyn-text px-0">
+        <blockquote class="blockquote">
+            <p class="mb-2 text-center text-sm-center text-lg-left">UX Engineer with a background in Human Factors Psychology. Effective at combining creativity and problem solving to develop user-friendly applications.</p>
+        </blockquote>
+    </div>
+</section>
+
+<section class="row">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 dyn-text">
+      <p class="text-uppercase mt-3">Resume</p>
+    </div>
+  </div>
+  {{#each job}}
+  {{> jobBlock}}
+  {{/each}}
+</section>
+
+<section class="row">
+  <div class="col-md-8 offset-md-2 dyn-text">
+    <p class="text-uppercase mt-3">Certifications</p>
+    {{#each certification}}
+      {{> certification}}
+    {{/each}}
+  </div>
+</section>
+
+<section class="row">
+  <div class="col-md-8 offset-md-2 dyn-text mb-3">
+    <p class="text-uppercase mt-3">Education</p>
+    {{#each education}}
+      {{> school}}
+    {{/each}}
+</div>
+</section>
+
+{{> footer}}

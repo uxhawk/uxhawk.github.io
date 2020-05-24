@@ -18,6 +18,11 @@ app.use(express.static('public'));
 // require('./routes/api-routes.js')(app);
 require('./routes/html-routes.js')(app);
 
+// catch 404 and forward to error handler
+app.use((req, res) => {
+  res.status(404).render('404');
+});
+
 // set up handlebars
 const exphbs = require('express-handlebars');
 
