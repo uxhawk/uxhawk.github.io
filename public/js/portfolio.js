@@ -572,6 +572,8 @@ $(document).ready(function() {
     };
   });
 
+  const currentYear = new Date().getFullYear();
+  $('#year').text(currentYear);
 
   init();
   $('#theme-btn').click(toggleTheme);
