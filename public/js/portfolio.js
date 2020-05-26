@@ -35,16 +35,16 @@ $(document).ready(function() {
   function setStyle() {
     if (theme === 'light') {
       htmlTag.removeAttribute('data-theme');
-      themeBtn.classList.add('far', 'fa-moon');
-      themeBtn.classList.remove('fas', 'fa-sun');
+      themeBtn.classList.add('fa-moon');
+      themeBtn.classList.remove('fa-sun');
       if (hasChart.length !== 0) {
         chartFontColor = '#11131f';
         chartGridColor = '#dddddd';
       }
     } else {
       htmlTag.setAttribute('data-theme', 'dark');
-      themeBtn.classList.remove('far', 'fa-moon');
-      themeBtn.classList.add('fas', 'fa-sun');
+      themeBtn.classList.remove('fa-moon');
+      themeBtn.classList.add('fa-sun');
       if (hasChart.length !== 0) {
         chartFontColor = '#ffffff';
         chartGridColor = '#acacac';
