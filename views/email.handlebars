@@ -2,21 +2,22 @@
 
   <section class="row mt-4 pt-4 mb-4 pb-4">
     <div class="col-md-6 offset-md-3">
-      <h1>Send David an Email</h1>
-      <hr class="mt-1 line mb-5">
+      <h1>Email Form</h1>
+      <hr class="mt-1 line mb-4">
       <form id="emailForm">
         <div class="form-group">
-          <label for="emailInput">Email address</label>
-          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="emailInput"><p class="p-0 m-0">Email Address</p></label>
+          <input type="email" class="form-control input-fields" id="emailInput" aria-describedby="emailHelp" >
         </div>
         <div id="emailMessage" class="form-group">
-          <label for="emailBody">Message</label>
-          <textarea class="form-control" id="emailBody" rows="3"></textarea>
+          <label for="emailBody"><p class="p-0 m-0">Message</p></label>
+          <textarea class="form-control input-fields" id="emailBody" rows="3"></textarea>
         </div>
 
-        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcXavwUAAAAACBAfW-W0-lHhykqhx8YTMQHAodO" data-callback="verifyRobot"></div>
+        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcXavwUAAAAACBAfW-W0-lHhykqhx8YTMQHAodO" data-callback="verifyRobot" data-theme="light"></div>
 
-        <button id="email-btn" type="submit" class="btn btn-primary">Submit</button>
+        <button id="email-btn" type="submit" class="btn btn-primary mt-4">Submit</button>
+        <hr class="mt-1 line mb-4">
       </form>
     </div>
   </section>

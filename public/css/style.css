@@ -17,6 +17,7 @@
     --global-line-color: #dddddd;
     --global-filter-invert: 100%;
     --global-box-shadow: rgb(0,0,0);
+    --global-input-bg: #ffffff;
 }
 
 html {
@@ -37,6 +38,7 @@ html[data-theme='dark'] {
     --global-link-blue: #00BDFB;
     --global-line-color: #666666;
     --global-filter-invert: 0%;
+    --global-input-bg: #303030;
 }
 
 body {
@@ -72,7 +74,6 @@ header {
     display: flex;
     justify-content: flex-end;
 }
-
 
 ul,
 li,
@@ -110,12 +111,10 @@ h5 {
 h1 {
     font-size: 2rem;
     color: var(--global-text-color);
-    
 }
 
 h2 {
     font-size: 1.8rem;
-   
 }
 
 h3 {
@@ -148,8 +147,6 @@ li {
     font-size: 15px;
     color: var(--global-text-color)
 }
-
-
 
 small {
     color: var(--global-text-color);
@@ -203,6 +200,20 @@ blockquote {
     font-weight: bold;
     font-family: var(--global-font-family);
 }
+
+/* -------Form Styles------- */
+.input-fields {
+    background-color: var(--global-input-bg);
+    border-color: var(--global-line-color);
+    color: var(--global-text-color);
+}
+
+.input-fields:focus {
+    background-color: var(--global-input-bg);
+    border-color: var(--global-line-color);
+    color: var(--global-text-color);
+}
+
 
 /* -------Menu Styles------- */
 .dropdown-menu-center {
