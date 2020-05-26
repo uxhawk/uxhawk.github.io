@@ -1,23 +1,24 @@
 {{> nav}}
 
-<form id="emailForm">
-  <div class="form-group">
-    <label for="emailInput">Email address</label>
-    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-  </div>
-  <div id="emailMessage" class="form-group">
-    <label for="emailBody">Message</label>
-    <textarea class="form-control" id="emailBody" rows="3"></textarea>
-  </div>
+  <section class="row mt-4 pt-4 mb-4 pb-4">
+    <div class="col-md-6 offset-md-3">
+      <h1>Send David an Email</h1>
+      <hr class="mt-1 line mb-5">
+      <form id="emailForm">
+        <div class="form-group">
+          <label for="emailInput">Email address</label>
+          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div id="emailMessage" class="form-group">
+          <label for="emailBody">Message</label>
+          <textarea class="form-control" id="emailBody" rows="3"></textarea>
+        </div>
 
-  <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcXavwUAAAAACBAfW-W0-lHhykqhx8YTMQHAodO" data-callback="verifyRobot"></div>
+        <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcXavwUAAAAACBAfW-W0-lHhykqhx8YTMQHAodO" data-callback="verifyRobot"></div>
 
-  <button id="email-btn" type="submit" class="btn btn-primary">Submit</button>
-</form>
+        <button id="email-btn" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
 
-<script>
-
-</script>
-
-{{> what-next}}
 {{> footer}}
