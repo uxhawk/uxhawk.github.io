@@ -1,16 +1,23 @@
 {{> nav}}
 
-<form>
+<form id="emailForm">
   <div class="form-group">
     <label for="emailInput">Email address</label>
     <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
   </div>
-<div class="form-group">
+  <div id="emailMessage" class="form-group">
     <label for="emailBody">Message</label>
     <textarea class="form-control" id="emailBody" rows="3"></textarea>
   </div>
 
+  <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcXavwUAAAAACBAfW-W0-lHhykqhx8YTMQHAodO" data-callback="verifyRobot"></div>
+
   <button id="email-btn" type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<script>
+
+</script>
+
 {{> what-next}}
 {{> footer}}

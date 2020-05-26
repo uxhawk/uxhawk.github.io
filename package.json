@@ -27,13 +27,15 @@
   "homepage": "https://github.com/uxhawk/uxhawk.github.io#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.1.1",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
     "gsap": "^3.2.6",
     "handlebars": "^4.7.6",
     "mongojs": "^3.1.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
