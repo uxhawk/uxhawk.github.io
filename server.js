@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Server.js - the initial starting point for the
 // Node/Express server
 const express = require('express');
@@ -15,7 +16,7 @@ app.use(express.static('public'));
 
 
 // routes
-// require('./routes/api-routes.js')(app);
+require('./routes/api-routes.js')(app);
 require('./routes/html-routes.js')(app);
 
 // catch 404 and forward to error handler

@@ -35,4 +35,8 @@ module.exports = function(app) {
   app.get('/heuristic-evaluation', (req, res) => {
     res.render('heuristic-evaluation');
   });
+
+  app.get('/email', (req, res) => {
+    res.render('email');
+  });
 };
