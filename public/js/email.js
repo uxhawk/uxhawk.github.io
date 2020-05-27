@@ -18,12 +18,12 @@ $(document).ready(function() {
     };
 
     const alert = $(`<div id="alert" class="alert alert-warning" role="alert">
-    Beep Boop! Please respond to the captcha.
+    <i class="fas fa-robot pr-2"></i> Beep Boop! Please respond to the captcha.
   </div>`);
 
     const success = $(`<div id="success" 
     class="alert alert-success mt-4" role="alert">
-    Message Sent. Thanks for the email!
+    <i class="fas fa-check-circle pr-2"></i>Message Sent. Thanks for the email!
   </div>`);
 
     $.ajax({
