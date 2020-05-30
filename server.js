@@ -16,8 +16,6 @@ app.use(compression());
 app.use(express.json());
 app.use(express.static('public'));
 
-
-
 // routes
 require('./routes/api-routes.js')(app);
 require('./routes/html-routes.js')(app);
