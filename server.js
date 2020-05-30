@@ -2,6 +2,7 @@
 // Server.js - the initial starting point for the
 // Node/Express server
 const express = require('express');
+const compression = require('compression');
 
 // setting up port
 const PORT = process.env.PORT || 8080;
@@ -11,8 +12,10 @@ const app = express();
 app.use(express.urlencoded({
   extended: true,
 }));
+app.use(compression());
 app.use(express.json());
 app.use(express.static('public'));
+
 
 
 // routes
