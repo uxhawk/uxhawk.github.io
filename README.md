@@ -1,5 +1,5 @@
 # UX Hawk
-![Travis (.org)](https://img.shields.io/travis/uxhawk/uxhawk.github.io?style=for-the-badge)
+[![Build Status](https://travis-ci.com/uxhawk/project-2.svg?branch=master)](https://travis-ci.com/uxhawk/project-2)
 
 Welcome to my personal GitHub repo. Go to my portfolio [uxhawk.github.io](https://uxhawk.github.io/) to see the work I'm most proud of.
 
