@@ -1,4 +1,6 @@
 // Requiring path to so we can use relative routes to our HTML files
+const path = require('path');
+
 module.exports = function(app) {
   app.get('/', (req, res) => {
     res.render('index');
@@ -34,6 +36,10 @@ module.exports = function(app) {
 
   app.get('/new-customer-onboarding', (req, res) => {
     res.render('new-customer-onboarding');
+  });
+
+  app.get('/sitemap.xml', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/sitemap.xml'));
   });
 
   app.get('/ux-ui', (req, res) => {
