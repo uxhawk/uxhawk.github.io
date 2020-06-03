@@ -1,4 +1,3 @@
-// this is uxhawk.com
 /* eslint-disable no-unused-vars */
 let captchaRes;
 // eslint-disable-next-line no-unused-vars
